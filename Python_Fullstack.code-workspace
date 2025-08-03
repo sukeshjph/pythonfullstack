@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Python_Course/set_up"
+		},
+		{
+			"path": "../Python_Course/FastAPI-The-Complete-Course-main"
+		}
+	],
+	"settings": {}
+}

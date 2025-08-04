@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-app-backend"
+version = "0.1.0"
+description = "FastAPI backend for financial application"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.0.0"
+]
+
+[project.scripts]
+dev = "uvicorn books:app --reload --host 0.0.0.0 --port 8000"
+start = "uvicorn books:app --host 0.0.0.0 --port 8000"
+
+[tool.uvicorn]
+app = "books:app"
+host = "0.0.0.0"
+port = 8000
+reload = true 
